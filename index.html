@@ -4,22 +4,49 @@
     <meta charset="utf-8" />
     <title>ZingSoft Demo</title>
     <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
       .chart--container {
         min-height: 530px;
         width: 100%;
         height: 100%;
       }
-  #myChart-wrapper {
+
+      body {
+        background-color: #000000;
+        zoom: 120%;
+        color: #fff;
+      }
+
+      #myChart-wrapper {
         height: 100vh !important;
       }
 
       .zc-ref {
         display: none;
       }
+
+      h1 {
+        text-align: center;
+        line-height: 1.8;
+      }
     </style>
   </head>
   <body>
+    <h1>Saaol Centers in India</h1>
     <div id="myChart" class="chart--container"></div>
 
     <script>
@@ -30,13 +57,12 @@
             options: {
               bbox: [67.177, 36.494, 98.403, 6.965], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
               ignore: ["IND"], // ignore India because we are rendering a more specific India map below
-              name: "world.countries",
+              name: "india",
               panning: false, // turn of zooming. Doesn't work with bounding box
               style: {
                 tooltip: {
                   borderColor: "#000",
                   borderWidth: "2px",
-                  fontSize: "18px",
                 },
                 controls: {
                   visible: false, // turn of zooming. Doesn't work with bounding box
@@ -60,6 +86,7 @@
                   borderColor: "#000",
                   borderWidth: "2px",
                   fontSize: "18px",
+                  zoom: "60% !important",
                 },
                 borderColor: "#000",
                 borderWidth: "2px",
@@ -73,17 +100,18 @@
                   PB: {
                     tooltip: {
                       text: `
-  Centers in Punjab
--Amritsar
--Patiala
--Ludhiana
--Jalandhar
--Hoshiarpur
--Mohali
--Bathinda
--Ferozepur
- `,
+                            Centers in Punjab
+                            -Amritsar
+                            -Patiala
+                            -Ludhiana
+                            -Jalandhar
+                            -Hoshiarpur
+                            -Mohali
+                            -Bathinda
+                            -Ferozepur
+       `,
                       backgroundColor: "#fff",
+                      zoom: "60% !important",
                     },
                     backgroundColor: "#ff5722",
                     label: {
@@ -93,19 +121,19 @@
                   DL: {
                     tooltip: {
                       text: `
-Centers in Delhi
--Chhattarpur
--South Delhi
--East Delhi
--North Delhi
--South Delhi
--Dwarka
--Central Delhi
--Faridabad
--Ghaziabad
--Gurugram
--JanakPuri
-`,
+                                                              Centers in Delhi
+                                  -Chhattarpur
+                                  -South Delhi
+                                  -East Delhi
+                                  -North Delhi
+                                  -South Delhi
+                                  -Dwarka
+                                  -Central Delhi
+                                  -Faridabad
+                                  -Ghaziabad
+                                  -Gurugram
+                                  -JanakPuri
+      `,
                       backgroundColor: "#fff",
                     },
                     backgroundColor: "#264653",
@@ -116,13 +144,13 @@ Centers in Delhi
                   KA: {
                     tooltip: {
                       text: `
-Centers in Karnataka
--Banglore-Hebbal
--Banasankari
--Marathalli
--Hubballi
--Belagavi
-`,
+                                  Centers in Karnataka
+                                  -Banglore-Hebbal
+                                  -Banasankari
+                                  -Marathalli
+                                  -Hubballi
+                                  -Belagavi
+      `,
                       backgroundColor: "#fff",
                     },
                     backgroundColor: "#2A9D8F",
@@ -133,27 +161,27 @@ Centers in Karnataka
                   MH: {
                     tooltip: {
                       text: `
-Centers in Maharashtra
--Mumbai Juhu
--Charni
--Borivali
--Navi Mumbai
--Virar
--Thane
--Panvel
--Nagpur
--Pune 1
--Pune 2
--Solapur
--Kalyan
--Pimpri chinchwad
--Vikhroli
--Aurangabad
--Nasik
--Akola
--Jalhgaon
--Dadar East
-`,
+                                  Centers in Maharashtra
+                                  -Mumbai Juhu
+                                  -Charni
+                                  -Borivali
+                                  -Navi Mumbai
+                                  -Virar
+                                  -Thane
+                                  -Panvel
+                                  -Nagpur
+                                  -Pune 1
+                                  -Pune 2
+                                  -Solapur
+                                  -Kalyan
+                                  -Pimpri chinchwad
+                                  -Vikhroli
+                                  -Aurangabad
+                                  -Nasik
+                                  -Akola
+                                  -Jalhgaon
+                                  -Dadar East
+      `,
                       backgroundColor: "#fff",
                     },
                     backgroundColor: "#E9C46A",
@@ -164,9 +192,9 @@ Centers in Maharashtra
                   TL: {
                     tooltip: {
                       text: `
-Centers in Telangana
--Hyderabd
-`,
+                                  Centers in Telangana
+                                  -Hyderabd
+      `,
                       backgroundColor: "#fff",
                     },
                     backgroundColor: "#F4A261",
@@ -177,11 +205,11 @@ Centers in Telangana
                   WB: {
                     tooltip: {
                       text: `
-Centers in West Bengal              
--Kolkata
--Asansol
--Siliguri
-`,
+      Centers in West Bengal
+      -Kolkata
+      -Asansol
+      -Siliguri
+      `,
                       backgroundColor: "#fff",
                     },
                     backgroundColor: "#E76F51",
@@ -211,3 +239,4 @@ Centers in West Bengal
     </script>
   </body>
 </html>
+
