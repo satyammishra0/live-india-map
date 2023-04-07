@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
     <title>ZingSoft Demo</title>
@@ -14,8 +15,10 @@
       .zc-ref {
         display: none;
       }
+
     </style>
   </head>
+
   <body>
     <div id="myChart" class="chart--container"></div>
 
@@ -25,8 +28,8 @@
           {
             type: "zingchart.maps",
             options: {
-              bbox: [67.177, 36.494, 98.403, 6.965], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
-              ignore: ["IND"], // ignore India because we are rendering a more specific India map below
+              bbox: [ 67.177, 36.494, 98.403, 6.965 ], // get bbox from zingchart.maps.getItemInfo('world-countries','ind');
+              ignore: [ "IND" ], // ignore India because we are rendering a more specific India map below
               name: "world.countries",
               panning: false, // turn of zooming. Doesn't work with bounding box
               style: {
@@ -71,14 +74,15 @@
                     tooltip: {
                       text: `
                         Centers in Punjab
-                           ~Amritsar
-                           ~Patiala
-                           ~Ludhiana
-                           ~Jalandhar
-                           ~Hoshiarpur
-                           ~Mohali
-                           ~Bathinda
-                           ~Ferozepur
+
+                           -Amritsar
+                           -Patiala
+                           -Ludhiana
+                           -Jalandhar
+                           -Hoshiarpur
+                           -Mohali
+                           -Bathinda
+                           -Ferozepur
                             `,
                       backgroundColor: "#fff",
                     },
@@ -91,17 +95,18 @@
                     tooltip: {
                       text: `
                       Centers in Delhi
-                      ~Chhattarpur
-                      ~South Delhi
-                      ~East Delhi
-                      ~North Delhi
-                      ~South Delhi
-                      ~Dwarka
-                      ~Central Delhi
-                      ~Faridabad
-                      ~Ghaziabad
-                      ~Gurugram
-                      ~JanakPuri
+
+                      -Chhattarpur
+                      -South Delhi
+                      -East Delhi
+                      -North Delhi
+                      -South Delhi
+                      -Dwarka
+                      -Central Delhi
+                      -Faridabad
+                      -Ghaziabad
+                      -Gurugram
+                      -JanakPuri
                       `,
                       backgroundColor: "#fff",
                     },
@@ -114,11 +119,12 @@
                     tooltip: {
                       text: `
                       Centers in Karnataka
-                      ~Banglore-Hebbal
-                      ~Banasankari
-                      ~Marathalli
-                      ~Hubballi
-                      ~Belagavi
+
+                      -Banglore-Hebbal
+                      -Banasankari
+                      -Marathalli
+                      -Hubballi
+                      -Belagavi
                       `,
                       backgroundColor: "#fff",
                     },
@@ -131,25 +137,26 @@
                     tooltip: {
                       text: `
                       Centers in Maharashtra
-                      ~Mumbai Juhu
-                      ~Charni
-                      ~Borivali
-                      ~Navi Mumbai
-                      ~Virar
-                      ~Thane
-                      ~Panvel
-                      ~Nagpur
-                      ~Pune-1
-                      ~Pune-2
-                      ~Solapur
-                      ~Kalyan
-                      ~Pimpri chinchwad
-                      ~Vikhroli
-                      ~Aurangabad
-                      ~Nasik
-                      ~Akola
-                      ~Jalhgaon
-                      ~Dadar East
+
+                      -Mumbai Juhu
+                      -Charni
+                      -Borivali
+                      -Navi Mumbai
+                      -Virar
+                      -Thane
+                      -Panvel
+                      -Nagpur
+                      -Pune-1
+                      -Pune-2
+                      -Solapur
+                      -Kalyan
+                      -Pimpri chinchwad
+                      -Vikhroli
+                      -Aurangabad
+                      -Nasik
+                      -Akola
+                      -Jalhgaon
+                      -Dadar East
                       `,
                       backgroundColor: "#fff",
                     },
@@ -162,7 +169,8 @@
                     tooltip: {
                       text: `
                       Centers in Telangana
-                      ~Hyderabd
+
+                      -Hyderabd
                       `,
                       backgroundColor: "#fff",
                     },
@@ -175,9 +183,10 @@
                     tooltip: {
                       text: `
                       Centers in West Bengal
-                      ~Kolkata
-                      ~Asansol
-                      ~Siliguri
+                      
+                      -Kolkata
+                      -Asansol
+                      -Siliguri
                       `,
                       backgroundColor: "#fff",
                     },
@@ -207,4 +216,5 @@
       });
     </script>
   </body>
+
 </html>
